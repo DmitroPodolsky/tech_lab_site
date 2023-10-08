@@ -3,7 +3,7 @@ li:first-child {
 }
 
 a:last-child {
-    color: red;
+    color: red; /* Changed to red */
 }
 
 input:disabled {
@@ -15,7 +15,7 @@ div > p {
 }
 
 a[href^="https"] {
-    color: green;
+    color: red; /* Changed to red */
 }
 
 input[type="text"] {
@@ -26,8 +26,8 @@ li:first-child, li:last-child {
     font-size: 24px;
 }
 
-div > p {
-    font-size: 16px; /* Changed to target all p elements inside div */
+div p {
+    font-size: 16px;
 }
 
 input:checked {
@@ -42,11 +42,11 @@ li:nth-child(even) {
     font-weight: bold;
 }
 
-input[type="text"]:not(:disabled) { /* Fixed the not([disabled]) selector */
+input[type="text"]:not(:disabled) {
     background-color: gray;
 }
 
-*:first-child + p { /* Changed *:first-child to target the first paragraph after any element */
+*:first-child + p {
     font-size: 24px;
 }
 
@@ -56,7 +56,7 @@ input[type="text"]:not(:disabled) { /* Fixed the not([disabled]) selector */
 
 p::first-letter {
     font-size: 36px;
-    font-weight: bold; /* Added font-weight for better visibility */
+    font-weight: bold;
 }
 
 a::after {
@@ -67,21 +67,21 @@ a::after {
 header {
     background-color: #333;
     color: white;
-    padding: 10px; /* Adjusted padding for better appearance */
+    padding: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    display: flex; /* Added display properties for better layout */
-    justify-content: space-between; /* To separate the header items */
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 header ul {
     list-style: none;
     padding: 0;
-    display: flex; /* Display the menu items as a horizontal list */
+    display: flex;
 }
 
 header ul li {
@@ -97,15 +97,15 @@ header a {
 /* Updated footer styles */
 footer {
     background-color: #333;
-    color: white;
-    padding: 10px; /* Adjusted padding for better appearance */
+    color: red; /* Changed to red */
+    padding: 10px;
     text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     display: flex;
-    justify-content: center; /* Center align footer items */
+    justify-content: center;
     align-items: center;
 }
 
